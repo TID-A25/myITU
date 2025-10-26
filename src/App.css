@@ -49,7 +49,10 @@ body {
   overflow-x: auto;
   padding: 1rem;
   gap: 1rem;
-  scroll-snap-type: x mandatory;
+
+  /* Remove snapping */
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on iOS */
 }
 
 /* Profile Card Styles */
