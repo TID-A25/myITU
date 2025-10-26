@@ -1,5 +1,5 @@
 import React from "react";
-import InterestPicture from "../assets/Anime.jpg";
+import InterestPicture from "../assets/Sports.jpg";
 
 export default function InterestCard({ interest }) {
   return (

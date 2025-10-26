@@ -64,6 +64,34 @@
   cursor: pointer;
 }
 
+/* "Bump" button */
+.bump-button {
+  position: absolute;
+  bottom: 10px;
+  right: -50%;
+  background-color: rgb(189, 239, 212); /* #BDEFD4 */
+  color: black;
+  border: none;
+  border-radius: 50%;        /* make the button it round */
+  width: 50px;               /* equal width and height */
+  height: 50px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centers the text */
+  transition: all 0.2s ease;
+}
+
+.bump-button:hover {
+  background-color: rgb(169, 219, 192); /* slightly darker on hover */
+  transform: scale(1.08);
+}
+
+
+
+
 
 /* === Mobile tweaks === */
 @media (max-width: 600px) {
