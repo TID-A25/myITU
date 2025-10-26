@@ -5,6 +5,7 @@ import coverPhoto from "../assets/Coverpicture.jpg";
 import profilePicture from "../assets/Athena.jpg";
 import globe from "../assets/Globe.svg";
 import hat from "../assets/Graduation_hat.svg";
+import settingsIcon from "../assets/Settings.svg";
 import InterestCard from "../components/InterestCard.jsx";
 
 export default function UserProfile() {
@@ -23,7 +24,16 @@ export default function UserProfile() {
         </div>
 
         <div className="profile-picture-header">
-          <img src={profilePicture} alt="Profile Picture" />
+          <img
+            src={profilePicture}
+            alt="Profile Picture"
+            className="profile-img"
+          />
+          <img
+            src={settingsIcon}
+            className="settings-icon"
+            alt="Settings icon"
+          />
         </div>
       </div>
 
@@ -47,6 +57,7 @@ export default function UserProfile() {
         </div>
       </div>
 
+      {/* Interests row*/}
       <div className="interests-row">
         <h3>Interests</h3>
         <InterestCard interest={profile.interest} />
