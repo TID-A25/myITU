@@ -2,23 +2,25 @@ import React from "react";
 
 /**
  * ProfileCard Component
- * @param {Object} profile - contains name and info
+ * @param {Object} profile - contains name, degree, image
  */
 export default function ProfileCard({ profile }) {
   return (
     <div className="profile-card">
-      {/* Placeholder for user image */}
-      <div className="profile-photo" />
+      <div
+        className="profile-photo"
+        style={{ backgroundImage: `url(${profile.image})` }}
+      >
+        <div className="profile-info">
+          <h3>{profile.name}</h3>
+          <p>{profile.degree}</p>
+        </div>
+      </div>
 
-      {/* Basic user info */}
-      <h3>{profile.name}</h3>
-      <p>{profile.degree}</p>
-
-      {/* Interests (static for now) */}
       <div className="interests">
-        <button>Interest</button>
-        <button>Interest</button>
-        <button>Interest</button>
+        <span>Interest</span>
+        <span>Interest</span>
+        <span>Interest</span>
       </div>
     </div>
   );
