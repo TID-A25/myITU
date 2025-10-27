@@ -1,3 +1,163 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Header Styles */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #e7fff1;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #3ec199;
+}
+
+.app-header nav {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #3ec199;
+}
+
+/* Spacing between nav items */
+.app-header nav button {
+  margin: 0 0.5rem;
+}
+
+/* Section Title */
+.profile-section h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #222;
+  padding-left: 1rem;
+}
+
+/* Horizontal Scroll Area */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
+
+  /* Remove snapping */
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on iOS */
+}
+
+/* Profile Card Styles */
+.profile-card {
+  min-width: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #baf3dc;
+  background-color: #f3fff9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+}
+
+/* Profile Image Placeholder */
+.profile-photo {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+/* Text overlay */
+.profile-info {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e3e3e3;
+}
+
+/* Interests */
+.interests {
+  padding: 0.75rem 1rem;
+}
+
+.interests span {
+  margin: 2px 4px 0 0;
+  background: #dffff4;
+  border: 1px solid #a2e5cb;
+  color: #2b8c75;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+/* Footer Nav */
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background-color: #e7fff1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  border-top: 1px solid #c8f1e0;
+  width: 100%;
+}
+
+/* App Container for mobile-width UI */
+.app-container {
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Optional: Light outer background (like native mobile feel) */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #dcf7ec; /* pastel green */
+  display: flex;
+  justify-content: center;
+}
+
 /* User Profile Styling */
 #root,
 .App {
@@ -43,13 +203,13 @@
   margin: 0 auto;
 }
 
-.profile-info {
+.user-profile-info {
   margin-top: 60px; /* crating space for overlapped picture */
   text-align: center;
   font-family: system-ui, sans-serif;
 }
 
-.profile-info h3 {
+.user-profile-info h3 {
   font-size: 1.5rem;
   margin-bottom: 0.2rem;
 }
@@ -104,7 +264,7 @@
     height: 120px;
   }
 
-  .profile-info h3 {
+  .user-profile-info h3 {
     font-size: 1.2rem;
   }
 }
@@ -117,7 +277,7 @@
   margin-left: 4px;
 }
 
-.profile-info p {
+.user-profile-info p {
   margin: 0.3rem 0;
   font-size: 0.95rem;
   color: #333;
