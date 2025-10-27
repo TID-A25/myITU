@@ -6,9 +6,9 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bottom-nav">
-      <span>🔔</span>
-      <span>🏠</span>
-      <span>👤</span>
+      <button>🔔</button>
+      <button>🏠</button>
+      <button>👤</button>
     </footer>
   );
 }

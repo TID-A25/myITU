@@ -1,5 +1,5 @@
 export const profilesByInterest = {
-  Anime: [
+  "Anime": [
     { name: "Chi Chi", degree: "BSc Hacking" },
     { name: "Athena", degree: "MSc Games" },
     { name: "Naruto", degree: "Ninjutsu Master" },

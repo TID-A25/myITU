@@ -31,7 +31,7 @@ body {
 }
 
 /* Spacing between nav items */
-.app-header nav span {
+.app-header nav button {
   margin: 0 0.5rem;
 }
 

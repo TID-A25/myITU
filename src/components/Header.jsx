@@ -8,9 +8,9 @@ export default function Header() {
     <header className="app-header">
       <h1>mITU</h1>
       <nav>
-        <span className="active">Profiles</span>
+        <button className="active">Profiles</button>
         <span>|</span>
-        <span>Events</span>
+        <button>Events</button>
       </nav>
     </header>
   );
