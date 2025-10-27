@@ -38,7 +38,7 @@ export default function UserProfile() {
       </div>
 
       {/* Profile info on the page */}
-      <div className="profile-info">
+      <div className="user-profile-info">
         <div className="name-row">
           <h3>{profile.name}</h3>
           <img src={verifiedBadge} className="badge" alt="Verified badge" />
