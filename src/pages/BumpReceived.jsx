@@ -16,13 +16,28 @@ export default function BumpReceived() {
 
   return (
     <div>
-      <img src={profilePicture} alt={you.name} width="100" />
-      <img src={otherProfilePicture} alt={other.name} width="100" />
+      {/* The two profile pictures */}
+      <div className="bumping-pictures">
+        <img src={profilePicture} alt={you.name} className="profile-img" />
+        <img
+          src={otherProfilePicture}
+          alt={other.name}
+          className="profile-img"
+        />
+      </div>
 
-      <h1>{other.name} bumped into you!</h1>
+      {/* Title message saying they bumped into you */}
+      <div className="bump-received-title">
+        <h3 className="name-row">{other.name} bumped into you!</h3>
+      </div>
 
-      <p>You both like:</p>
-      <InterestCard interest={you.interest} />
+      {/* Showing You both like: and interest card */}
+      <div className="shared-interest-title">
+        <h4 className="name-row">You both like:</h4>
+      </div>
+      <div className="shared-interest-card">
+        <InterestCard interest={you.interest} />
+      </div>
     </div>
   );
 }
