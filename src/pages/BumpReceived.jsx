@@ -18,7 +18,7 @@ export default function BumpReceived() {
     <div>
       {/* The two profile pictures */}
       <div className="bumping-pictures">
-        <img src={profilePicture} alt={you.name} className="profile-img" />
+        <img src={profilePicture} alt={you.name} className="bump-profile-img" />
         <img
           src={otherProfilePicture}
           alt={other.name}
@@ -37,6 +37,19 @@ export default function BumpReceived() {
       </div>
       <div className="shared-interest-card">
         <InterestCard interest={you.interest} />
+      </div>
+
+      <div className="buttons">
+        {/* Accept button */}
+        <div className="button-big">
+          <ButtonBig label="Accept!" />
+        </div>
+
+        {/* Back and decline button */}
+        <div className="bump-buttons-small">
+          <ButtonBack />
+          <ButtonDecline label="Decline" />
+        </div>
       </div>
     </div>
   );
