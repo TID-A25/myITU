@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 /**
@@ -6,9 +7,15 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bottom-nav">
-      <button>🔔</button>
-      <button>🏠</button>
-      <button>👤</button>
+      <Link to="">
+        <button>🔔</button>
+      </Link>
+      <Link to="/">
+        <button>🏠</button>
+      </Link>
+      <Link to="/user-profile">
+        <button>👤</button>
+      </Link>
     </footer>
   );
 }

@@ -7,6 +7,7 @@ import globe from "../assets/Globe.svg";
 import hat from "../assets/Graduation_hat.svg";
 import settingsIcon from "../assets/Settings.svg";
 import InterestCard from "../components/InterestCard.jsx";
+import { Link } from "react-router-dom";
 
 export default function OtherUserProfile() {
   {
@@ -29,7 +30,9 @@ export default function OtherUserProfile() {
             alt="Profile Picture"
             className="profile-img"
           />
-          <button className="bump-button">Bump</button>
+          <Link to="/bump-sent">
+            <button className="bump-button">Bump</button>
+          </Link>
         </div>
       </div>
 
