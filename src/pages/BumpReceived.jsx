@@ -15,10 +15,10 @@ export default function BumpReceived() {
   const other = mockProfileData[1];
 
   return (
-    <div>
+    <div className="bump-page">
       {/* The two profile pictures */}
       <div className="bumping-pictures">
-        <img src={profilePicture} alt={you.name} className="bump-profile-img" />
+        <img src={profilePicture} alt={you.name} className="profile-img" />
         <img
           src={otherProfilePicture}
           alt={other.name}
