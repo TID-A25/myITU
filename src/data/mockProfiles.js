@@ -12,7 +12,7 @@ export const mockProfileData = [
     degree: "MSc Games",
     semester: "3rd. semester",
     country: "Greece",
-    interest: "Sports",
+    interest:  ["Sports", "Knitting", "Movies"],
   },
 
   {
@@ -20,7 +20,7 @@ export const mockProfileData = [
     degree: "Ninjutsu Master",
     semester: "3rd. semester",
     country: "Japan",
-    interest: "Knitting",
+    interest: ["Golf", "Music", "Knitting"],
   },
 
   {
