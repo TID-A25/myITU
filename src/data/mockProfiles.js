@@ -30,4 +30,59 @@ export const mockProfileData = [
     country: "Vietnam",
     interest: "Pumpkin-carving",
   },
+
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+  
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
+  
+  {
+    name: "Chi Chi",
+    degree: "BSc Hacking",
+    semester: "3rd. semester",
+    country: "Vietnam",
+    interest: "Pumpkin-carving",
+  },
 ];
