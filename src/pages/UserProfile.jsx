@@ -6,7 +6,6 @@ import profilePicture from "../assets/Athena.jpg";
 import globe from "../assets/Globe.svg";
 import hat from "../assets/Graduation_hat.svg";
 import settingsIcon from "../assets/Settings.svg";
-import InterestCard from "../components/InterestCard.jsx";
 import InterestScroller from "../components/InterestScroller.jsx";
 
 export default function UserProfile() {
