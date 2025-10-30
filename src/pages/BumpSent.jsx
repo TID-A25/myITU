@@ -9,7 +9,7 @@ import ButtonBack from "../components/ButtonBack.jsx";
 import ButtonDecline from "../components/ButtonDecline.jsx";
 import InterestCard from "../components/InterestCard.jsx";
 
-export default function BumpReceived() {
+export default function BumpSent() {
   // load first and second element of mock data list, Athena and Chad
   const you = mockProfileData[0];
   const other = mockProfileData[1];
@@ -26,9 +26,9 @@ export default function BumpReceived() {
         />
       </div>
 
-      {/* Title message saying they bumped into you */}
+      {/* Title message saying you bumped into them */}
       <div className="bump-title">
-        <h3 className="name-row">{other.name} bumped into you!</h3>
+        <h3 className="name-row">You bumped into {other.name}!</h3>
       </div>
 
       {/* Showing You both like: and interest card */}
@@ -40,15 +40,15 @@ export default function BumpReceived() {
       </div>
 
       <div className="buttons">
-        {/* Accept button */}
+        {/* OK button */}
         <div className="button-big">
-          <ButtonBig label="Accept!" />
+          <ButtonBig label="OK" />
         </div>
 
-        {/* Back and decline button */}
+        {/* Back and cancel button */}
         <div className="bump-buttons-small">
           <ButtonBack />
-          <ButtonDecline label="Decline" />
+          <ButtonDecline label="Cancel" />
         </div>
       </div>
     </div>

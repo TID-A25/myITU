@@ -386,7 +386,7 @@ body {
 }
 
 .bump-page,
-.bump-received-title,
+.bump-title,
 .shared-interest-title,
 .shared-interest-card,
 .buttons {
@@ -412,7 +412,7 @@ body {
 }
 
 /* Title under bump profile pictures */
-.bump-received-title {
+.bump-title {
   margin-top: 8px;
   font-size: 1.3rem;
   color: #000;
